@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    --bs-yellow:#ffc107;
+    --bs-torquoise: #40e0d0;
+
+
+
+    font-family: candara, sans-serif;
+    font-size: 1.2rem;
+}
+
+.gqheader {
+    height: 90vh;
+    background: #012A2D;
+    display: flex;                  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;           
+    border: 2px solid rgb(12, 13, 14);
+}
+
+.logo-box {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gqheader>p {
+    color: var(--bs-torquoise);
+}

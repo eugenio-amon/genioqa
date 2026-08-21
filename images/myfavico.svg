@@ -1,0 +1,25 @@
+
+
+
+<svg width="90" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="" rx="10" ry="10" width="100" height="100" fill="#012A2D"/>
+        <path id="guide-Lines" d="M5 13 H95 M5 50 H95 M5 60 H95 M5 87 H95 
+                M50 5 L50 95
+                M370 50 L386.0696902 65.32088886" stroke="#ffc107" stroke-width="0.5">
+        </path>
+        <path id="letter-G" d="M88.3325939 40 L78.7494454 42.85714286
+                A30 25 0 1 0 78.7494454 60 L50 60 L50 50 L88.3325939 50 v10
+                A40 35 0 1 1 88.3325939 40" stroke="#C0C0C0" fill="#40e0d0" stroke-width="0.5" >
+        </path>
+        <path d="M92 50
+                A42 37 0 1 0 8 50
+                A42 37 0 1 0 92 50" stroke="azure" stroke-width="1">
+        </path>
+        <path d="M71 82.04293994 L76.5 91.56921938" stroke="azure" stroke-width="1">
+        </path>
+
+"
+</svg>
+  
+     
+
