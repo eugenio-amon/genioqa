@@ -8,6 +8,15 @@
     color:azure;
 }
 
+h1 {
+    font-family: 'Bradley Hand ITC', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    /*color: #00a8a8;*/
+    color: #ffffff;
+}
+
 *, .gqheader, .logo-box, .slogan {
 background: #012A2D;
 }
@@ -19,12 +28,12 @@ background: #012A2D;
 }
 
 .logo-box {   
-    margin: 20px; 
-    padding: 10px;     
+    margin: 20px 20px 0; 
+    padding: 5px;     
 }
 
 .slogan {
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
     border: 3px solid rgb(96, 165, 221);
 }
@@ -69,4 +78,34 @@ background: #012A2D;
     .gqheader {
         font-size: 1.4em;
     }
+}
+
+/* Base social link styling */
+.social-link {
+    position:fixed;
+    bottom: 40px;
+    color: #808080;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3sec ease;
+}
+
+.social-link, 
+.social-link i {
+    transition: color 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:hover i {
+    color: #40e0d0 !important; /* !important ensures Font Awesome's internal styles are overridden */
+}
+
+.fixed-left {
+    left: 40px;
+}
+
+.fixed-right {
+    left: 60px;
 }
