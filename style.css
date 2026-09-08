@@ -69,6 +69,7 @@ background: #012A2D;
 
 @media screen and (max-width: 375px) {
   .hero {
+    width: 70%;
     font-size: 0.8rem; /* Shrinks the text slightly so it fits one row */
     margin: 10px;
     padding: 40px;
