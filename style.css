@@ -61,6 +61,12 @@ background: #012A2D;
     border: 3px solid rgb(96, 165, 221);
 }
 
+@media screen and (max-width: 375px) {
+    .slogan {padding: 10px 5px 10px;}
+    h3 {font-size: 16px;}      
+}
+
+
 .hero {
     width: 60%;
     margin: 20px;
