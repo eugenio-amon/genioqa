@@ -31,6 +31,15 @@ h1 {
     color: #ffffff;
 }
 
+/* Target iPhone 12 mini and smaller mobile screens */
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.6rem; /* Shrinks the text slightly so it fits one row */
+  }
+}
+
+
+
 *, .gqheader, .logo-box, .slogan {
 background: #012A2D;
 }
