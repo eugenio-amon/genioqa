@@ -1,53 +1,71 @@
 @font-face {
-    font-family: 'Fuchsia Buddha';
-    src: url('fonts/fuchsiabuddha.ttf'); 
+    font-family: 'Marydale Bold';
+    src: url('fontsxx/marydbol.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bradley Hand ITC';
-    src: url('fonts/BRADHI.ttf'); 
+    font-family: 'Google Sans Flex';
+    src: url('fonts/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf'); 
     font-weight: normal;
     font-style: normal;
 }
+
 * {
     margin: 0;
+    background-color:#012A2D;
+    
     --bs-yellow:#ffc107;
     --bs-turquoise: #40e0d0;
-
-    font-family: monospace, monospace; _font-family: 'courier new', monospace; 
-    
+    font-family: monospace, monospace; _font-family: 'courier new', monospace;    
     color:azure;
 }
 
 h1 {
-    font-family: 'Bradley Hand ITC', sans-serif;
-    /*font-family: 'Fuchsia Buddha', sans-serif;*/
-    font-size: 2.0rem;
-    font-weight: 800;
-    letter-spacing: -0.01em;
-    /*color: #00a8a8;*/
-    color: #ffffff;
+    font-family: 'Marydale Bold', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    color:azure;
+    background: transparent;
+
+}
+
+.slogan h2, strong {
+    color: var(--bs-turquoise);
+    background: transparent;
 }
 
 /* Target iPhone 12 mini and smaller mobile screens */
 @media screen and (max-width: 375px) {
-  h1 {
+h1 {
     font-size: 1.6rem; /* Shrinks the text slightly so it fits one row */
   }
 }
 
-
-
-*, .gqheader, .logo-box, .slogan {
-background: #012A2D;
-}
-
-.gqheader { 
+.gqheader {
+    /*background: transparent;*/
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;                  
     flex-direction: column;  
-    align-items: center;              
+    align-items: center;  
+    /*
+    background-image: url(/imagesxx/busbar.JPG);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 90%;
+    
+    background-color: rgba(1, 42, 45, 0.4);
+    background-blend-mode: darken; 
+    background-blend-mode: multiply;*/
+}
+
+.logo-box, .slogan {   
+    background: transparent;
 }
 
 .logo-box {   
@@ -56,26 +74,83 @@ background: #012A2D;
 }
 
 .slogan {
-    margin: 30px;
-    padding: 10px;
-    border: 3px solid rgb(96, 165, 221);
+    margin: 30px 30px 0;
+    padding: 10px 10px 0;
+    /*border: 3px solid rgb(96, 165, 221);*/
+}
+
+.logo-story> .story-sub {
+    width: 60%;
+    margin: 0 20px;
+    padding: 10px 50px ; 
 }
 
 .hero {
     width: 60%;
-    margin: 20px;
-    padding: 50px;  
+    font-size: 1.1em ;
+    margin: 30px 20px 30px;
+    padding: 10px;
+    background-color: transparent;
+    
+}
+.story-sub {
+    margin: 0 10px;
+}
+
+.logo-story {
+    display: flex;                  
+    flex-direction: column;  
+    align-items: center;
+}    
+
+strong {
+    color: rgb(96, 165, 221);
+}
+
+.logo-story p,
+.logo-story ul>li,
+.logo-story ol>li {
+    font-family: Google Sans Flex, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: -0.03;
+    color: rgb(175, 174, 174);
+}
+
+ul, ol {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.logo-story h3 {
+    width: 60%;
+    margin: 0 20px;
+    padding: 10px 50px 0;  
+    
+}
+
+.logo-story h3  {
+    /*color: var(--bs-turquoise);*/
+    color: rgb(96, 165, 221);
+}
+
+
+
+.logo-story ol>li,
+.logo-story ul>li {
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 375px) {
-    h3 {
+    h2 {
         white-space: nowrap;
     }
     .hero {
         width: 70%;
         margin: 10px 20px;
         padding: 20px;
-    }
+    }    
 }
 
 @media (min-width: 576px) {
@@ -138,11 +213,9 @@ background: #012A2D;
 }
 
 .fixed-left {
-    left: 40px;
-    
+    left: 40px;   
 }
 
 .fixed-right {
-    left: 70px;
-    
+    left: 70px;   
 }
