@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Marydale Bold';
-    src: url('fontsxx/marydbol.ttf');
+    src: url('fonts/marydbol.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,10 +15,13 @@
 * {
     margin: 0;
     background-color:#012A2D;
+    box-sizing: border-box;
     
     --bs-yellow:#ffc107;
     --bs-turquoise: #40e0d0;
-    font-family: monospace, monospace; _font-family: 'courier new', monospace;    
+    --bs-maroon: #8A1538;
+
+    font-family: Google Sans Flex, sans-serif;  
     color:azure;
 }
 
@@ -29,12 +32,12 @@ h1 {
     letter-spacing: 0.1em;
     color:azure;
     background: transparent;
-
 }
 
-.slogan h2, strong {
+.slogan strong, .hero strong {
     color: var(--bs-turquoise);
     background: transparent;
+    
 }
 
 /* Target iPhone 12 mini and smaller mobile screens */
@@ -45,27 +48,17 @@ h1 {
 }
 
 .gqheader {
-    /*background: transparent;*/
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;                  
     flex-direction: column;  
-    align-items: center;  
-    /*
-    background-image: url(/imagesxx/busbar.JPG);
-    background-size: 400px 200px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 90%;
-    
-    background-color: rgba(1, 42, 45, 0.4);
-    background-blend-mode: darken; 
-    background-blend-mode: multiply;*/
+    align-items: center;    
 }
 
 .logo-box, .slogan {   
     background: transparent;
+    border: 0;
 }
 
 .logo-box {   
@@ -74,27 +67,27 @@ h1 {
 }
 
 .slogan {
-    margin: 30px 30px 0;
+    margin: 30px 20px 0;
     padding: 10px 10px 0;
-    /*border: 3px solid rgb(96, 165, 221);*/
 }
 
 .logo-story> .story-sub {
     width: 60%;
-    margin: 0 20px;
-    padding: 10px 50px ; 
+    margin: 0;
+    padding: 10px; 
 }
 
 .hero {
     width: 60%;
     font-size: 1.1em ;
+    letter-spacing: 0.01em;
     margin: 30px 20px 30px;
     padding: 10px;
     background-color: transparent;
     
 }
 .story-sub {
-    margin: 0 10px;
+    margin: 0;
 }
 
 .logo-story {
@@ -103,9 +96,9 @@ h1 {
     align-items: center;
 }    
 
-strong {
+/*strong {
     color: rgb(96, 165, 221);
-}
+}*/
 
 .logo-story p,
 .logo-story ul>li,
@@ -118,15 +111,16 @@ strong {
 }
 
 ul, ol {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 
 .logo-story h3 {
     width: 60%;
-    margin: 0 20px;
-    padding: 10px 50px 0;  
+    margin: 0 40px;
+    padding: 20px 50px 0; 
+    box-sizing: border-box; 
     
 }
 
@@ -139,7 +133,7 @@ ul, ol {
 
 .logo-story ol>li,
 .logo-story ul>li {
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 375px) {
