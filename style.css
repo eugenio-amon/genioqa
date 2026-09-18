@@ -20,7 +20,7 @@
     --bs-yellow:#ffc107;
     --bs-turquoise: #40e0d0;
     --bs-maroon: #8A1538;
-
+    
     font-family: Google Sans Flex, sans-serif;  
     color:azure;
 }
@@ -34,17 +34,23 @@ h1 {
     background: transparent;
 }
 
+/* Accessible visually hidden utility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .slogan strong, .hero strong {
     color: var(--bs-turquoise);
     background: transparent;
     
-}
-
-/* Target iPhone 12 mini and smaller mobile screens */
-@media screen and (max-width: 375px) {
-h1 {
-    font-size: 1.6rem; /* Shrinks the text slightly so it fits one row */
-  }
 }
 
 .gqheader {
@@ -56,84 +62,97 @@ h1 {
     align-items: center;    
 }
 
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
 .logo-box, .slogan {   
     background: transparent;
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .logo-box {   
-    margin: 20px 20px 0; 
+    margin-top: 10px; 
     padding: 5px;     
 }
 
 .slogan {
-    margin: 30px 20px 0;
-    padding: 10px 10px 0;
-}
-
-.logo-story> .story-sub {
-    width: 60%;
     margin: 0;
-    padding: 10px; 
+    padding: 5px;
 }
 
 .hero {
     width: 60%;
     font-size: 1.1em ;
     letter-spacing: 0.01em;
-    margin: 30px 20px 30px;
-    padding: 10px;
-    background-color: transparent;
-    
-}
-.story-sub {
     margin: 0;
+    padding: 0 5px;
+    background-color: transparent;    
 }
 
-.logo-story {
+.logo-story {   
+    
+    width: 100%;
     display: flex;                  
     flex-direction: column;  
     align-items: center;
-}    
+    
+} 
 
-/*strong {
-    color: rgb(96, 165, 221);
-}*/
+.logo-story> .story-sub {
+    width: 70%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+}
+
+.story-sub-1 {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.story-sub-2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .logo-story p,
 .logo-story ul>li,
 .logo-story ol>li {
-    font-family: Google Sans Flex, sans-serif;
+    /*font-family: Google Sans Flex, sans-serif;*/
     font-size: 1.1rem;
     line-height: 1.5;
     letter-spacing: -0.03;
     color: rgb(175, 174, 174);
 }
 
-ul, ol {
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-
 .logo-story h3 {
-    width: 60%;
-    margin: 0 40px;
-    padding: 20px 50px 0; 
-    box-sizing: border-box; 
-    
-}
-
-.logo-story h3  {
-    /*color: var(--bs-turquoise);*/
+    margin: 0;
+    padding: 10px 0; 
+       
     color: rgb(96, 165, 221);
 }
 
+.logo-story accent-line {
+    width: 60%;
+    
+}
 
 
-.logo-story ol>li,
-.logo-story ul>li {
-    margin-left: 10px;
+/* Target iPhone 12 mini and smaller mobile screens */
+@media screen and (max-width: 375px) {
+h1 {
+    font-size: 1.6rem; /* Shrinks the text slightly so it fits one row */
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -144,13 +163,46 @@ ul, ol {
         width: 70%;
         margin: 10px 20px;
         padding: 20px;
-    }    
+        font-size: 1.0rem;
+    }   
+    .logo-story,
+    .story-sub,
+    header {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero {
+        width: 70%;
+        margin: 10px 20px;
+        padding: 20px;
+        font-size: 1.0rem;
+    }   
+    .logo-story,
+    .story-sub,
+    header {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 576px) {
-    .gqheader {       
-        font-size: 0.9em;
+   
+    .hero {
+        width: 70%;
+        margin: 10px 20px;
+        padding: 20px;
+        font-size: 1.1rem;
+    }   
+    .logo-story,
+    .story-sub,
+    header {
+        flex-direction: column;
+        font-size: 1rem;
     }
+    
 }
 
 @media (min-width: 768px) {
