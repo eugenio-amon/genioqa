@@ -160,16 +160,17 @@ h1 {
         white-space: nowrap;
     }
     .hero {
-        width: 70%;
-        margin: 10px 20px;
-        padding: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 10px 5px;
         font-size: 1.0rem;
     }   
     .logo-story,
     .story-sub,
     header {
+        display: flex;
         flex-direction: column;
-        font-size: 0.9rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -183,6 +184,7 @@ h1 {
     .logo-story,
     .story-sub,
     header {
+        display: flex;
         flex-direction: column;
         font-size: 0.9rem;
     }
@@ -199,6 +201,7 @@ h1 {
     .logo-story,
     .story-sub,
     header {
+        display: flex;
         flex-direction: column;
         font-size: 1rem;
     }
