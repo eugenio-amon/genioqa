@@ -75,6 +75,14 @@
             </svg>
                     
         </div>
+<!--
+        <a href="https://github.com/eugenio-amon" target="_blank" class="social-link fixed-left" aria-label="Github">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/eugenio-amon-jr" target="_blank" class="social-link fixed-right" aria-label="Github">
+            <i class="fa fa-linkedin"></i>
+        </a>
+-->
         </header>
 
         <h2 class="slogan">From circuits to <strong>code</strong></h2> 
@@ -97,10 +105,16 @@
         <h1 class="visually-hidden">EUGENIO AMON JR. - Frontend Developer</h1>
 
         <br>
-        <p class="hero" style="margin-left:50px;padding:0 10px 0">Hi! I am ...</p>
+        <div class="intro-row">
+            <!--
+            <p class="hero" style="margin-left:50px;padding:0 10px 0">Hi! I am ...</p>
+            -->
+            <p class="intro-text">"Hi! I am ..."</p>
+            <div class="name-svg">
+                <img src="/mySVGs/myName.svg" alt="Eugenio Amon Jr.">
+            </div>
+        </div>
 
-        <img src="/mySVGs/myName.svg" alt="Eugenio Amon Jr.">
-       
         <p class="hero"><strong>Electrical Technologist turned Front-End Developer.</strong> Building deterministic, high-performance web interfaces with a hardware engineer's mindset. My coding roots run deep — from solving complex engineering case studies in <strong>C and Turbo Pascal</strong> during college to crafting modern web applications today. Full-stack bound.</p>
         <a href="https://github.com/eugenio-amon" target="_blank" class="social-link fixed-left" aria-label="Github">
             <i class="fa fa-github"></i>
@@ -113,7 +127,7 @@
 
     <div class="logo-story">
         <br>
-        <h2>How I Built My Portfolio Logo Using SVG and VS Code</h1>
+        <h2 class="story-title">How I Built My Portfolio Logo Using SVG and VS Code</h2>
 
         <div class="accent-line">
             <svg width="300" height="10" viewBox="0 0 360 10" fill="none" xmlns="http://www.w3.org/2000/svg">          
@@ -122,10 +136,10 @@
             </svg>
         </div><br><br>
         
-        <h3>Code, Culture, and Circuits: Crafting My SVG Portfolio Logo in VS Code</h3>
-        <br>
-        <div class="story-sub">
-            <div class="story-sub-1">
+        <h3 class="story-subtitle">Code, Culture, and Circuits: Crafting My SVG Portfolio Logo in VS Code</h3>
+        
+        <div class="story-block">
+            <div class="story-text">
                 <p>A portfolio logo should be more than just a random graphic; it should tell a story. When it came time to design mine, I wanted something that was <em>lightweight, infinitely scalable, and deeply personal.</em></p>
                 <br>
                 <p>Instead of using traditional design software, I wrote my logo from scratch using <em>Scalable Vector Graphics (SVG)</em> right inside <em>Visual Studio Code.</em></p>
@@ -133,18 +147,18 @@
                 <p>The result is <strong>GENIOQA</strong>, a design that bridges my roots in the <em>Philippines</em>, my 15-year career journey in <em>Qatar</em>, and my professional evolution from hardware to software.
                 </p>
             </div>
-            <div class="story-sub-1">
-                <img src="/images/myLogoscrshot.png" alt="Screenshot of my logo and its code in VS Code" style="margin:2px 0 0 0;width:500px; height:300px">
-            </div>
+            
+            <img src="/images/myLogoscrshot.png" alt="Screenshot of my logo and its code in VS Code" class="story-img">
+            
         </div><br><br>
 
-        <h3>The Story Behind the Design: Merging Identity and Domain</h3>
+        <h3 class="story-subtitle">The Story Behind the Design: Merging Identity and Domain</h3>
         <br>
-        <div class="story-sub"> 
-            <div class="story-sub-1">
-                <img src="/images/thePearl180kb.jpg" alt="Lusail City" style="width:400px; height:250">
-            </div> 
-            <div class="story-sub-1">         
+        <div class="story-block"> 
+            
+            <img src="/images/thePearl180kb.jpg" alt="Lusail City" class="story-img">
+           
+            <div class="story-text">         
                 <p>The logo itself is clean and typographic, spelling out "GENIOQA".</p>
                 <p>This specific combination serves three meaningful purposes:</p><br>
                 <ul>
@@ -153,20 +167,19 @@
                     <br>
                 </ul>
             </div>                  
+        </div>       
+        <div class="story-text">
+            <ul>
+                <li><em>The Professional Evolution:</em> Interlocking the text are two custom vector coils. One curls to the right of the letter "O" in GENIO, and another curls to the left of the letter "Q" in QA. These coils resemble the standard <em>schematic symbol for an electrical inductor</em>, honoring my background as an <em>Electrical Technologist turned Front-End Developer</em>.</li>              </ul>
         </div>
-        <div class="story-sub">
-            <div class="story-sub-2">
-                <ul>
-                    <li><em>The Professional Evolution:</em> Interlocking the text are two custom vector coils. One curls to the right of the letter "O" in GENIO, and another curls to the left of the letter "Q" in QA. These coils resemble the standard <em>schematic symbol for an electrical inductor</em>, honoring my background as an <em>Electrical Technologist turned Front-End Developer</em>.</li>              </ul>
-            </div>
-        </div>
+      
         
         <br><br>
 
-        <h3>Why I Coded It: Performance & Precision in VS Code</h3>
+        <h3 class="story-subtitle">Why I Coded It: Performance & Precision in VS Code</h3>
         <br>        
-        <div class="story-sub">
-            <div class="story-sub-2">  
+        <div class="story-block">
+            <div class="story-text">  
                 <p>As a developer, writing raw SVG code directly in an IDE like VS Code offered unique advantages over exporting an image from an editor:</p>
                 <ul>
                     <li><em>Performance:</em> Because raw SVG is just lines of XML code, the file size is microscopic. My logo loads instantly without dragging down page speeds.</li>
@@ -176,9 +189,9 @@
             </div>
         </div><br><br>
         
-        <h3>Behind the Code: How It Was Built in VS Code</h3><br>
-        <div class="story-sub">
-            <div class="story-sub-2">  
+        <h3 class="story-subtitle">Behind the Code: How It Was Built in VS Code</h3><br>
+        <div class="story-block">
+            <div class="story-text">  
                 <p>Writing raw SVG code directly in an IDE like VS Code offered massive performance advantages. The file size is microscopic, allowing my site to load instantly while staying pixel-perfect on everything from tiny mobile screens to 4K monitors.</p><br>
                 <p>Here is the exact structural framework of how I mapped out the technical blueprint lines, text, my mathematical inductor paths, and an integrated CSS keyframe animation that makes the circuits pulse like a live current when a user hovers over the logo:</p>
         

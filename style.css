@@ -18,6 +18,8 @@
     --bs-yellow:#ffc107;
     --bs-turquoise: #40e0d0;
     --bs-maroon: #8A1538;  
+    --bs-textColor: rgb(175,174,174);
+    --bs-subtitleColor: rgb(96,165,221);
 }
 
 body {
@@ -93,15 +95,34 @@ header {
     text-align: center;
 }
 
-accent-line {
+.accent-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
 }
 
-intro-text {
+.intro-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.intro-text {
     font-size: 1.2rem;
     text-align: center;
+}
+
+.name-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
 }
 
 img {
@@ -124,55 +145,66 @@ img {
     */
 }
 
-.logo-story {   
-    
+/* --logo-story section-- */
+.logo-story {      
     width: 100%;
-    display: flex;                  
-    flex-direction: column;  
-    align-items: center;
-    
-} 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-.logo-story> .story-sub {
-    width: 70%;
+.story-title {
     margin: 0;
-    padding: 0; 
+    line-height: 1.6; /*breathing room without pushing siblings */
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 5px;
+     
+}
+
+.story-subtitle {
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--bs-subtitleColor);
+}
+
+.story-block {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.story-sub-1 {
-    width: 50%;
-    margin: 0;
-    padding: 0;
+.story-text {
+    flex: 1;
+    color: var(--bs-textColor);
 }
 
-.story-sub-2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+p, ul, li {
+    color: var(--bs-textColor);
+} 
+
+em {
+    color: azure;
 }
 
-.logo-story p,
-.logo-story ul>li,
-.logo-story ol>li {
-    /*font-family: Google Sans Flex, sans-serif;*/
-    font-size: 1.1rem;
-    line-height: 1.5;
-    letter-spacing: -0.03;
-    color: rgb(175, 174, 174);
+.story-img {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo-story h3 {
-    margin: 0;
-    padding: 10px 0; 
-       
-    color: rgb(96, 165, 221);
+/* Hover effect */
+.story-img:hover {
+    transform: scale(1.05); /* slight zoom */
+    box-shadow: 0.8px 20px rgba(0,0,0,0.25); /*soft shadow */
 }
 
-.logo-story accent-line {
-    width: 60%;  
-}
+
+
+/* ====
 
 @media (max-width: 1024px) {
     .slogan {
@@ -180,7 +212,8 @@ img {
         line-height: 1.4;
     }
     .gqheader {
-        gap: 15px; /*tighter spacing */
+        gap: 15px; ====*/ /*tighter spacing */
+    /*
     }
     .intro-text {
         font-size: 1rem;
@@ -192,6 +225,18 @@ img {
 }
 
 @media (max-width: 600px) {
+    .intro-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .intro-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .name-svg {
+        max-width: 80%;
+    }
+
     .slogan {
         font-size: 1.1rem;
         line-height: 1.3;
@@ -200,10 +245,52 @@ img {
         gap: 10px;
     }
     img {
-        max-width: 100%; /*allows SVG to scale down */
+        max-width: 100%; ==*/ /*allows SVG to scale down */
+    /*
+    }
+}
+-----*/
+
+/* ---*/
+
+@media (max-width: 991px) {
+    .story-block {
+        gap: 15px;
+    }
+    .story-text {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 767px) {
+    .story-block {
+        flex-direction: column; /*stack text and image vertically */
+        align-items: center;
+    }
+    .story-img {
+        max-width: 80%;
+        margin-top: 15px;
+    }
+    .story-subtitle {
+        text-align: center; /* center subtitle on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .story-title {
+        font-size: 1.5rem;
+    }
+    .story-subtitle {
+        font-size: 1.2rem;
+        border-bottom: none; /*optional: remove divider for phones */
+    }
+    .story-block {
+        gap: 10px;
+    }
+    .story-text {
+        font-size: 0.95rem;
+    }   
+}
 
     
 
