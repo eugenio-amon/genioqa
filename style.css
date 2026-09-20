@@ -12,15 +12,17 @@
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    background-color:#012A2D;
+* {    
     box-sizing: border-box;
     
     --bs-yellow:#ffc107;
     --bs-turquoise: #40e0d0;
-    --bs-maroon: #8A1538;
-    
+    --bs-maroon: #8A1538;  
+}
+
+body {
+    margin: 0;
+    background-color:#012A2D;
     font-family: Google Sans Flex, sans-serif;  
     color:azure;
 }
@@ -59,7 +61,9 @@ h1 {
     height: 100vh;
     display: flex;                  
     flex-direction: column;  
-    align-items: center;    
+    align-items: center; 
+    justify-content: flex-start; /* stack from top */
+    gap: 20px;
 }
 
 header {
@@ -84,16 +88,40 @@ header {
 
 .slogan {
     margin: 0;
-    padding: 5px;
+    line-height: 1.6; /*breathing room without pushing siblings */
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+accent-line {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+intro-text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    /* respect the fixed margins/paddings from inkscape */
 }
 
 .hero {
-    width: 60%;
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+    /*
     font-size: 1.1em ;
     letter-spacing: 0.01em;
     margin: 0;
     padding: 0 5px;
-    background-color: transparent;    
+    background-color: transparent;   
+    */
 }
 
 .logo-story {   
@@ -143,15 +171,47 @@ header {
 }
 
 .logo-story accent-line {
-    width: 60%;
-    
+    width: 60%;  
+}
+
+@media (max-width: 1024px) {
+    .slogan {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+    .gqheader {
+        gap: 15px; /*tighter spacing */
+    }
+    .intro-text {
+        font-size: 1rem;
+    }
+    .hero {
+        padding: 5px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .slogan {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    .gqheader {
+        gap: 10px;
+    }
+    img {
+        max-width: 100%; /*allows SVG to scale down */
+    }
 }
 
 
+    
+
 /* Target iPhone 12 mini and smaller mobile screens */
+/*
 @media screen and (max-width: 375px) {
 h1 {
-    font-size: 1.6rem; /* Shrinks the text slightly so it fits one row */
+    font-size: 1.6rem; 
   }
 }
 
@@ -237,6 +297,7 @@ h1 {
         font-size: 1.4em;
     }
 }
+*/
 
 /* Base social link styling */
 .social-link {
