@@ -204,13 +204,11 @@ em {
 
 
 
-/* ====
 
-@media (max-width: 1024px) {
-    .slogan {
-        font-size: 1.3rem;
-        line-height: 1.4;
-    }
+
+
+
+/* ====
     .gqheader {
         gap: 15px; ====*/ /*tighter spacing */
     /*
@@ -270,6 +268,7 @@ em {
     .story-img {
         max-width: 80%;
         margin-top: 15px;
+        height: auto; /* trial */
     }
     .story-subtitle {
         text-align: center; /* center subtitle on small screens */
@@ -288,8 +287,25 @@ em {
         gap: 10px;
     }
     .story-text {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }   
+}
+
+@media (max-width: 375px) {
+    .story-title {
+        font-size: 1.3rem;
+    }
+    .story-subtitle {
+        font-size: 1.2rem;
+        border-bottom: none; /*optional: remove divider for phones */
+    }
+    .intro-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .story-text {
+        font-size: 1rem;
+    } 
 }
 
     
