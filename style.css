@@ -268,6 +268,7 @@ em {
     .story-img {
         flex: none; /* stops the image from filling/stretching via flexbox */
         align-self: center; /* keeps the image centered independently */
+        width: 100%; /* Forces old WebKit engines to recalculate aspect ration */
         max-width: 80%;
         margin-top: 15px;
         height: auto; 
