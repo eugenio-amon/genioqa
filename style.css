@@ -266,9 +266,11 @@ em {
         align-items: center;
     }
     .story-img {
+        flex: none; /* stops the image from filling/stretching via flexbox */
+        align-self: center; /* keeps the image centered independently */
         max-width: 80%;
         margin-top: 15px;
-        height: auto; /* trial */
+        height: auto; 
     }
     .story-subtitle {
         text-align: center; /* center subtitle on small screens */
